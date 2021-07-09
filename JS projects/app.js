@@ -4,7 +4,6 @@ This function should return the temperature value in fahrenheits degrees. */
 //First option
 function kelvinToFahrenheit(kelvin) {
     return Math.floor((kelvin -273.15) *(9/5) + 32);
-
   }
    console.log(kelvinToFahrenheit(50));
 // Second option
@@ -65,7 +64,6 @@ function answerMyQuestion(userName,userQuestion){
   
   let answer = ["It is certain","It is decidedly so", "Reply hazy try again", "Cannot predict now", "Do not count on it", "My sources say no", "Outlook not so good", "Signs point to yes"] 
   return answer[Math.floor(Math.random() * answer.length)];
-  
   }
   console.log(answerMyQuestion("Irina","Why?")); */
   
