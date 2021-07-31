@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green; 
+}
+.button-wrapper {text-align:center;display:inline-block; margin:10px;}
+button {padding:10px; background-color:green;color:white;}
+</style>
+</head>
+
+<body>
+<div class="center">
+  </br>
+  <div class button-wrapper >
+  <p id='author'></p>
+  </br>
+    <button onclick = "getAQuote()">Show a quote</button>
+</div>
+</div>
+</body>
+
+<script>
+	let authors = [
+  {
+    "name": "Terry Pratchett",
+    "quote": "'The first draft is just you telling yourself the story.'",
+  },
+   {
+    "name": "Steven Pressfield",
+    "quote": "'Start before you’re ready.'",
+  },
+   {
+    "name": "Jodi Picoult",
+    "quote": "'You can always edit a bad page. You can’t edit a blank page'",
+  }, 
+]    
+            function getAQuote() {
+            	const random = Math.floor(Math.random() * authors.length);
+		document.getElementById("author").innerHTML = authors[random].name +" - "+ authors[random].quote;
+            }  
+        </script> 
+</html>
+
+
+
