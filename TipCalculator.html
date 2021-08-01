@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="tipcalculator.css">
+</head>
+    <body>
+
+<script src="tipcalculator.js">
+</script>
+
+    <br>
+  <label for="amount">The total bill amount</label>
+  <input type="text" id="amount" name="amount">
+
+<p>Enter service level:</p>
+  <input type="radio" id="Outstanding" name="serviceLevel" value="30">
+  <label for="Outstanding">Outstanding</label>
+    <br>
+  <input type="radio" id="Good" name="serviceLevel" value="20">
+  <label for="css">Good</label>
+    <br>
+  <input type="radio" id="OKish" name="serviceLevel" value="15">
+  <label for="javascript">OKish</label>
+    <br>
+  <input type="radio" id="Bad" name="serviceLevel" value="10">
+  <label for="javascript">Bad</label>
+    <br>
+  <input type="radio" checked id="Never" name="serviceLevel" value="0">
+  <label for="Never">Never coming back</label>
+    <br>
+    
+    <br>
+ <label for="cars">The number of persons that are splitting the bill :</label>
+  <select name="persons" id="persons">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+    <br>
+
+  <label> Tip value is:</label>
+  <p id='tip'></p>
+    <br>
+
+ <button onclick="calculateTip()">Calculate tip</button>
+
+    </body>
+</html>
+
